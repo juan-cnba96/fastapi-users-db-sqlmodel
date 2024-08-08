@@ -45,7 +45,7 @@ class SQLModelBaseOAuthAccount(SQLModel):
     account_id: str = Field(index=True, nullable=False)
     account_email: str = Field(nullable=False)
 
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 

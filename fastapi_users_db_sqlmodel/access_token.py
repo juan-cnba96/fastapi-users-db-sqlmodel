@@ -24,7 +24,7 @@ class SQLModelBaseAccessToken(SQLModel):
     )
     user_id: UUID4 = Field(foreign_key="user.id", nullable=False)
 
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 
