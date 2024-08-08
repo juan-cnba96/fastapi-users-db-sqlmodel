@@ -10,7 +10,7 @@ from sqlalchemy.orm import selectinload
 from sqlmodel import Field, Session, SQLModel, func, select
 from sqlmodel.ext.asyncio.session import AsyncSession
 
-__version__ = "0.3.0"
+__version__ = "0.3.0.JP"
 
 
 class SQLModelBaseUserDB(SQLModel):
@@ -29,7 +29,7 @@ class SQLModelBaseUserDB(SQLModel):
     is_superuser: bool = Field(False, nullable=False)
     is_verified: bool = Field(False, nullable=False)
 
-    class Config:
+    class ConfigDict:
         from_attributes = True
 
 

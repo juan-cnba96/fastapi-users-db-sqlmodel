@@ -54,6 +54,7 @@ build-backend = "hatchling.build"
 name = "fastapi-users-db-sqlmodel"
 authors = [
     { name = "François Voron", email = "fvoron@gmail.com" },
+    { name = "Juan Dellarroquelle", email = "juan@parente.ai" },
 ]
 description = "FastAPI Users database adapter for SQLModel"
 readme = "README.md"
@@ -81,4 +82,4 @@ dependencies = [
 
 [project.urls]
 Documentation = "https://fastapi-users.github.io/fastapi-users"
-Source = "https://github.com/fastapi-users/fastapi-users-db-sqlmodel"
+Source = "https://github.com/juan-cnba96/fastapi-users-db-sqlmodel"
