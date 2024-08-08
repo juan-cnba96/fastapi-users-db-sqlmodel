@@ -25,7 +25,7 @@ class SQLModelBaseAccessToken(SQLModel):
     user_id: UUID4 = Field(foreign_key="user.id", nullable=False)
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class SQLModelAccessTokenDatabase(Generic[AP], AccessTokenDatabase[AP]):

@@ -46,7 +46,7 @@ class SQLModelBaseOAuthAccount(SQLModel):
     account_email: str = Field(nullable=False)
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class SQLModelUserDatabase(Generic[UP, ID], BaseUserDatabase[UP, ID]):
