@@ -5,7 +5,8 @@ import pytest
 import pytest_asyncio
 from pydantic import UUID4
 from sqlalchemy import exc
-from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
+from sqlalchemy.ext.asyncio import create_async_engine
+from sqlmodel.ext.asyncio.session import AsyncSession
 from sqlalchemy.orm import sessionmaker
 from sqlmodel import Session, SQLModel, create_engine
 

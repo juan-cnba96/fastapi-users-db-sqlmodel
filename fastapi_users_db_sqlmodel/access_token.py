@@ -4,8 +4,8 @@ from typing import Any, Dict, Generic, Optional, Type
 from fastapi_users.authentication.strategy.db import AP, AccessTokenDatabase
 from pydantic import UUID4
 from sqlalchemy import Column, types
-from sqlalchemy.ext.asyncio import AsyncSession
 from sqlmodel import Field, Session, SQLModel, select
+from sqlmodel.ext.asyncio.session import AsyncSession
 
 from fastapi_users_db_sqlmodel.generics import TIMESTAMPAware, now_utc
 
