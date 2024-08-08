@@ -10,7 +10,7 @@ from sqlalchemy.orm import selectinload
 from sqlmodel import Field, Session, SQLModel, func, select
 from sqlmodel.ext.asyncio.session import AsyncSession
 
-__version__ = "0.3.0.JP"
+__version__ = "0.3.1"
 
 
 class SQLModelBaseUserDB(SQLModel):
